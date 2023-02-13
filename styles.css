@@ -1,0 +1,25 @@
+body {
+    max-width: 1000px;
+    margin: auto;
+}
+#left {
+    float: left;
+    width: 30%;
+    max-width: 300px;
+    background-color: #eeeeeb;
+}
+#left img {
+    width: 100%;
+}
+
+#left .content {
+    padding: 10px;
+}
+#right {
+    float: left;
+    width: 70%;
+    background-color: aliceblue;
+}
+#right .content {
+    padding: 10px;
+}
