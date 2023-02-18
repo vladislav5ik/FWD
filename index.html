@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <title>Personal Website - Vladislav Spigin</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="comic.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
+    <div id="comic_modal" class="modal">
+        <div class="modal-content">
+            <span class="close"><i class="fa fa-times"></i></span>
+            <p id="comic_title"></p>
+            <img id="comic_img" src="" alt="">
+            <p id="comic_date"></p>
+        </div>
+    </div>
     <div id="main">
         <div id="left">
             <div class="content">
@@ -32,6 +41,7 @@
                         v.spigin@innopolis.university
                         <i class="fa fa-external-link"></i>
                     </a>
+                    <button id="comic_btn">Show comic</button>
                 </div>
                 <div class="skills">
                     <h1>Hard Skills</h1>
@@ -118,5 +128,6 @@
             </div>
         </div>
     </div>
+    <script src="comic.js"></script>
 </body>
 </html>
