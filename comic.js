@@ -20,5 +20,10 @@ async function get_comic() {
     document.getElementById("comic_img").src = comic.img;
     document.getElementById("comic_img").alt = comic.alt;
     document.getElementById("comic_img").hidden = false;
-    document.getElementById("comic_date").textContent = new Date(comic.year, comic.month, comic.day).toLocaleDateString();
+    let comic_year = parseInt(comic.year);
+    let comic_month = parseInt(comic.month) - 1; // months are 0-indexed
+    let comic_day = parseInt(comic.day);
+    document.getElementById("comic_date").textContent = new Date(comic_year, comic_month, comic_day).toLocaleDateString();
 }
+
+get_comic();
