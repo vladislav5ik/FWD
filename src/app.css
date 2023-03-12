@@ -93,29 +93,29 @@ body {
     padding: 0;
     margin: 10px 0 10px 0;
 }
-#experience ul {
+.experience ul {
     padding: 0;
     margin: 0;
 }
-#experience li .company {
+.experience li .company {
     font-weight: bold;
     margin-bottom: 5px;
     margin-top: 15px;
 }
-#experience li .title {
+.experience li .position {
     font-style: italic;
     margin-top: 0;
     border-bottom: 1px solid var(--border-color);
 }
-#experience li .date {
+.experience li .date {
     margin-right: 10px;
     font-style: italic;
     float: right;
 }
-#experience li .description {
+.experience li .description {
     margin: 5px 0 0 0;
 }
-#experience li {
+.experience li {
     list-style: none;
     padding: 0 5px 5px 5px;
     border-radius: 5px;
