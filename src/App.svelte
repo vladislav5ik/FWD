@@ -30,3 +30,36 @@
         </div>
     </div>
 </main>
+
+<style>
+    main {
+        background-color: #FFFFFF;
+        box-shadow: 0 0 100px -39px rgba(212,214,180,1);
+        overflow: hidden;
+        max-width: 1000px;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .content {
+        padding: 10px;
+    }
+    img {
+        width: 100%;
+        border-radius: 5px;
+    }
+    #left {
+        float: left;
+        width: 30%;
+        max-width: 300px;
+    }
+    #right {
+        float: right;
+        width: 70%;
+        max-width: 700px;
+    }
+    #bottom {
+        clear: both;
+        width: 100%;
+        max-width: 1000px;
+    }
+</style>
