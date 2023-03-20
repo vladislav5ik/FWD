@@ -1,5 +1,5 @@
 <script lang="ts">
-    import type {Bio} from "./types";
+    import type {Bio} from "$lib/types";
     export let bio: Bio;
 </script>
 

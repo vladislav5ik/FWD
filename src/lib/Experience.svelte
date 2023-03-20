@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type {ExperienceItem} from "./types";
-    import ExperienceItemComponent from "./ExperienceItem.svelte";
+    import type {ExperienceItem} from "$lib/types";
+    import ExperienceItemComponent from "$lib/ExperienceItem.svelte";
     export let title: string = "Experience title";
     export let experience : ExperienceItem[] = [];
 
