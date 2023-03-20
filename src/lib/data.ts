@@ -32,16 +32,16 @@ export let links: types.Link[] = [
         linkId: 'email'
     }
 ];
-
+import { base } from '$app/paths';
 export let headerLinks: types.Link[] = [
     {
-        linkDestination: '/',
+        linkDestination: base + '/',
         linkText: 'Resume',
         linkIconClass: 'fa fa-home',
         linkId: 'home-link'
     },
     {
-        linkDestination: '/comic',
+        linkDestination: base + '/comic',
         linkText: 'Comic',
         linkIconClass: 'fa fa-comment',
         linkId: 'comic-link'
