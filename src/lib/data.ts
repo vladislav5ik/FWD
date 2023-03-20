@@ -33,6 +33,21 @@ export let links: types.Link[] = [
     }
 ];
 
+export let headerLinks: types.Link[] = [
+    {
+        linkDestination: '/',
+        linkText: 'Resume',
+        linkIconClass: 'fa fa-home',
+        linkId: 'home-link'
+    },
+    {
+        linkDestination: '/comic',
+        linkText: 'Comic',
+        linkIconClass: 'fa fa-comment',
+        linkId: 'comic-link'
+    }
+];
+
 export let hardSkills: types.Skill[] = [
     { name: 'Python' },
     { name: 'Flask' },

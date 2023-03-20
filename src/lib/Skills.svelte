@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type {Skill} from "./types";
-    import SkillComponent from "./Skill.svelte";
+    import type {Skill} from "$lib/types";
+    import SkillComponent from "$lib/Skill.svelte";
     export let title: string = "Skills title";
     export let skills : Skill[] = [];
 </script>

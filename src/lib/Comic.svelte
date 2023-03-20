@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type {Comic} from "./types";
-    import Card from "./Card.svelte";
+    import type { Comic } from "$lib/types";
+    import Card from "$lib/Card.svelte";
 
     export let email: string;
     let img_scr : string = "data:,";

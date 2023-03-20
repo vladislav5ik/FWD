@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type {Link} from "./types";
-    import LinkComponent from "./Link.svelte";
+    import type {Link} from "$lib/types";
+    import LinkComponent from "$lib/Link.svelte";
     export let links : Link[] = [];
 </script>
 

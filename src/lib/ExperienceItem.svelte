@@ -1,6 +1,6 @@
 <script lang="ts">
-    import type {ExperienceItem} from "./types";
-    import Card from "./Card.svelte";
+    import type {ExperienceItem} from "$lib/types";
+    import Card from "$lib/Card.svelte";
     export let experienceItem: ExperienceItem;
 </script>
 
