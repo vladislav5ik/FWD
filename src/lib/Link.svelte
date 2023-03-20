@@ -2,10 +2,11 @@
     import type {Link} from "$lib/types";
     export let link: Link;
     export let rightIcon: string = "fa fa-external-link";
+    import { base } from '$app/paths';
 </script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<a class="link" id={link.linkId} href="{link.linkDestination}">
+<a class="link" id={link.linkId} href="{base}{link.linkDestination}">
     <i class="link-left-icon {link.linkIconClass}"></i>
     <span class="link-text">{link.linkText}</span>
     {#if rightIcon}
