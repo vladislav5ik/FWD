@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 	import Header from '$lib/Header.svelte';
 	import Footer from '$lib/Footer.svelte';
-	import { headerLinks } from '$lib/data';
+	import { headerLinks } from '$lib/headerLinksData';
 </script>
 
 <header>

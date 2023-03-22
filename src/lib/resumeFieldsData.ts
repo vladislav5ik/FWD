@@ -1,13 +1,12 @@
-import type * as types from './types';
+import type {Bio, Link, Skill, ExperienceItem} from './types';
 
-export let bio: types.Bio = {
+export let bio: Bio = {
 	name: 'Vladislav Spigin',
 	position: 'Python Backend Developer',
 	description:
 		'I am creative Python Backend developer with 2-year experience creating user-friendly analytical programming software and chat-bots using Flask, PostgreSQL and other technologies. Great team player and always ready to learn new technologies to deliver exceptional customer experience.'
 };
-export let comic_email: string = 'v.spigin@innopolis.university';
-export let links: types.Link[] = [
+export let contactLinks: Link[] = [
 	{
 		linkDestination: 'https://github.com/vladislav5ik',
 		linkText: 'Github',
@@ -33,23 +32,8 @@ export let links: types.Link[] = [
 		linkId: 'email'
 	}
 ];
-import { base } from '$app/paths';
-export let headerLinks: types.Link[] = [
-	{
-		linkDestination: base + '/',
-		linkText: 'Resume',
-		linkIconClass: 'fa fa-home',
-		linkId: 'home-link'
-	},
-	{
-		linkDestination: base + '/comic',
-		linkText: 'Comic',
-		linkIconClass: 'fa fa-comment',
-		linkId: 'comic-link'
-	}
-];
 
-export let hardSkills: types.Skill[] = [
+export let hardSkills: Skill[] = [
 	{ name: 'Python' },
 	{ name: 'Flask' },
 	{ name: 'REST' },
@@ -65,7 +49,7 @@ export let hardSkills: types.Skill[] = [
 	{ name: 'Trello' }
 ];
 
-export let softSkills: types.Skill[] = [
+export let softSkills: Skill[] = [
 	{ name: 'Teamwork' },
 	{ name: 'Problem solving' },
 	{ name: 'Self-motivation' },
@@ -73,9 +57,9 @@ export let softSkills: types.Skill[] = [
 	{ name: 'Communication' }
 ];
 
-export let languageSkills: types.Skill[] = [{ name: 'English' }, { name: 'Russian' }];
+export let languageSkills: Skill[] = [{ name: 'English' }, { name: 'Russian' }];
 
-export let experience: types.ExperienceItem[] = [
+export let experienceItems: ExperienceItem[] = [
 	{
 		date: '2022',
 		company: 'Innopolis University',

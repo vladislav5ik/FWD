@@ -1,6 +1,6 @@
 <script lang="ts">
 	import ComicComponent from '$lib/Comic.svelte';
-	import * as data from '$lib/data';
+	import {comic_email} from '$lib/comicFieldsData';
 </script>
 
-<ComicComponent email={data.comic_email} />
+<ComicComponent email={comic_email} />

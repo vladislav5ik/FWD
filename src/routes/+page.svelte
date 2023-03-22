@@ -4,22 +4,22 @@
 	import ExperienceComponent from '$lib/Experience.svelte';
 	import BioComponent from '$lib/Bio.svelte';
 	import profile_picture from '$lib/images/img.png';
-	import * as data from '$lib/data';
+	import {contactLinks, softSkills, hardSkills, languageSkills, bio, experienceItems} from '$lib/resumeFieldsData';
 </script>
 
 <div id="left">
 	<div class="content">
 		<img src={profile_picture} alt="Profile" />
-		<LinksComponent links={data.links} />
-		<SkillsComponent title="Soft Skills" skills={data.softSkills} />
-		<SkillsComponent title="Hard Skills" skills={data.hardSkills} />
-		<SkillsComponent title="Languages" skills={data.languageSkills} />
+		<LinksComponent links={contactLinks} />
+		<SkillsComponent title="Soft Skills" skills={softSkills} />
+		<SkillsComponent title="Hard Skills" skills={hardSkills} />
+		<SkillsComponent title="Languages" skills={languageSkills} />
 	</div>
 </div>
 <div id="right">
 	<div class="content">
-		<BioComponent bio={data.bio} />
-		<ExperienceComponent title="Experience" experience={data.experience} />
+		<BioComponent bio={bio} />
+		<ExperienceComponent title="Experience" experience={experienceItems} />
 	</div>
 </div>
 
